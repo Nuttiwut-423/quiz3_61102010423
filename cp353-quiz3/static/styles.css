@@ -1,0 +1,80 @@
+body {
+    background-color:  #264653;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+  
+
+  table {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    background-color: #264653;
+   
+  }
+
+  th {
+    font-size: 20px;
+    background-color: #e9c46a;
+    text-align: center;
+    height: 70px;
+  }
+
+  td{
+    font-size: 16px;
+    text-align: left;
+    height: 50px;
+  }
+  .top{
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .container{
+    text-align: right;
+  }
+  .w3-button {
+    margin-top: 8 px;
+    margin-bottom: 5px;
+  }
+  .container-insert{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #e9c46a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 450px;
+  }
+
+  .container-delete{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 450px;
+  }
+
+  .container-update{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #35d7ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 450px;
+  }
+
+  .container-update p {
+    text-align: left;
+    font-size: 20px;
+  }
+
+
+  
+
+  

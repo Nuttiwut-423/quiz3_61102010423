@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-update">
+        <h1>Update</h1>
+        <form action='' method=" POST ">
+            <div class="form-group"></div>
+            <div class="form-group">
+                <p>Title <input type="text" class="form-control " name="title" value="{{book.title}}" /></p>
+            </div>
+            <div class="form-group">
+                <p>Author <input type="text" class="form-control " name="author" value="{{book.author}}" /></p>
+            </div>
+            <div class="form-group">
+                <p>Genre <input type="text" class="form-control " name="genre" value="{{book.genre}}" /></p>
+            </div>
+            <div class="form-group">
+                <p>Height <input type="integer" class="form-control " name="height" value="{{book.height}}" /></p>
+            </div>
+            <div class="form-group">
+                <p>Publisher <input type="text" class="form-control " name="publisher" value="{{book.publisher}}" /></p>
+            </div>
+            <p><input type="submit" class="btn btn-primary" value="Submit" /></p>
+        </form>
+    </div>
+
+</body>
+
+</html>

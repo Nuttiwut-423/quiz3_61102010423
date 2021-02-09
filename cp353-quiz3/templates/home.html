@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <h1>BOOK</h1>
+    </div>
+
+
+    <div class="container">
+        <button class="w3-button w3-blue" style="text-align: right;"><a href="{{ url_for('insert') }}">Add
+                Book</a></button><br>
+
+        {%for message in get_flashed_messages() %}
+        {{ message }}
+        {%endfor %}
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Height</th>
+                    <th>Publisher</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for book in books %}
+                <tr>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.genre }}</td>
+                    <td>{{ book.height }}</td>
+                    <td>{{ book.publisher }}</td>
+                    <td><button class="w3-button w3-green"><a href="/{{book.title}}/update">Update</a></button></td>
+                    <td><button class="w3-button w3-red"><a href="/{{book.title}}/delete">Delete</a></button></td>
+                    {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
